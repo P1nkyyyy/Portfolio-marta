@@ -1,0 +1,10 @@
+.information-bar {
+    @include flex(space-between, center);
+
+    &__contact-informations {
+        @include flex(center, center);
+
+        font-style: normal;
+        gap: var(--base-16);
+    }
+}

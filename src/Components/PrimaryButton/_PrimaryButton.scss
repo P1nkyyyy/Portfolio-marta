@@ -1,0 +1,20 @@
+.primary-button {
+    --primary-btn-fill-color: #fff;
+    --primary-btn-text-color: var(--text-color-dark);
+
+    --primary-btn-border-color: #000;
+    --primary-btn-border-style: solid;
+    --primary-btn-border-width: 1px;
+
+    background-color: var(--primary-btn-fill-color);
+    color: var(--primary-btn-text-color);
+
+    border-color: var(--primary-btn-border-color);
+    border-style: var(--primary-btn-border-style);
+    border-width: var(--primary-btn-border-width);
+
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    padding: var(--base-8) var(--base-16);
+}

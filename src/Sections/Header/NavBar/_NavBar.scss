@@ -1,0 +1,12 @@
+.navbar {
+    .menu {
+        @include flex(center, center);
+        gap: var(--base-16);
+
+        list-style-type: none;
+        &__item {
+            text-transform: uppercase;
+        }
+       
+    }  
+}

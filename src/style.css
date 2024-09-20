@@ -1,0 +1,75 @@
+.service-item {
+  /* region start */
+  /* region end */
+}
+.primary-button {
+  --primary-btn-fill-color: #fff;
+  --primary-btn-text-color: var(--text-color-dark);
+  --primary-btn-border-color: #000;
+  --primary-btn-border-style: solid;
+  --primary-btn-border-width: 1px;
+  background-color: var(--primary-btn-fill-color);
+  color: var(--primary-btn-text-color);
+  border-color: var(--primary-btn-border-color);
+  border-style: var(--primary-btn-border-style);
+  border-width: var(--primary-btn-border-width);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: var(--base-8) var(--base-16);
+}
+
+.information-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.information-bar__contact-informations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  gap: var(--base-16);
+}
+
+.information-item {
+  display: flex;
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--base-16);
+  list-style-type: none;
+}
+.navbar .menu__item {
+  text-transform: uppercase;
+}
+
+:root {
+  --primary-color: #F67692;
+  --secondary-color: #F5F5DC;
+  --tertiary-color: #333333;
+  --text-color-light: #fff;
+  --text-color-dark: #212427;
+  --base-4: 0.25rem;
+  --base-8: 0.5rem;
+  --base-12: 0.75rem;
+  --base-16: 1rem;
+  --base-20: 1.25rem;
+  --base-28: 1.75rem;
+  --base-32: 2rem;
+  --base-64: 4rem;
+  --base-100: 6.25rem;
+}
+
+body {
+  font-family: "Darker Grotesque", sans-serif;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
