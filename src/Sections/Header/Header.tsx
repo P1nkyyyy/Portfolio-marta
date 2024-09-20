@@ -13,10 +13,7 @@ export const Header: FunctionComponent<HeaderProps> = ({ }) => {
     return (
         <header className={className()}>
             <InformationBar />
-            <div>
-                <h1 className={className("logo")}>Salon <span className={className("logo", { strong: true })}>Pinki</span></h1>
-                <NavBar />
-            </div>
+            <NavBar />
         </header>
     )
 }

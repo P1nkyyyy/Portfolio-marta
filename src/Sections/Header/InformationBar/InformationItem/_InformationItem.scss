@@ -1,3 +1,12 @@
 .information-item {
+    --icon-size: 1.5rem;
+
     display: flex;
+    align-items: center;
+    gap: var(--base-4);
+
+    svg {
+        height: var(--icon-size);
+        width: var(--icon-size);
+    }
 }

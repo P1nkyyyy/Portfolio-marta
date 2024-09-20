@@ -7,17 +7,25 @@ type InformationItemProps = {
     /** Icon that will be used inside the information item */
     icon: ReactElement;
     /** Text for the item */
-    text: string;
+    text?: string;
+    /** Link addres */
+    url?: string;
 }
 
 export const InformationItem: FunctionComponent<InformationItemProps> = ({
     icon,
     text,
+    url,
 }) => {
     return (
         <div className={className()}>
-            {icon}
-            <p>{text}</p>
+            {url ?
+                <a href={url} target="_blank">
+                    {icon}
+                </a>
+                : <> {icon} </>
+            }
+            {text && <p>{text}</p>}
         </div>
     )
 }

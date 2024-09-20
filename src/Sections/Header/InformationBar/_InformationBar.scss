@@ -1,7 +1,7 @@
 .information-bar {
     @include flex(space-between, center);
 
-    &__contact-informations {
+    &__contact-informations, &__socials {
         @include flex(center, center);
 
         font-style: normal;

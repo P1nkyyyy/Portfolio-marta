@@ -19,6 +19,10 @@
     --base-32: 2rem;
     --base-64: 4rem;
     --base-100: 6.25rem;
+
+    --font-size-small: 1rem;
+    --font-size-regular: 1.5rem;
+    --font-size-large:2.5rem;
 }
 
 body {
@@ -28,6 +32,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, span {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
     padding: 0;
     margin: 0;
 }

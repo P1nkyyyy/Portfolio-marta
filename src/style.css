@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.information-bar__contact-informations {
+.information-bar__contact-informations, .information-bar__socials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,18 +32,42 @@
 }
 
 .information-item {
+  --icon-size: 1.5rem;
   display: flex;
+  align-items: center;
+  gap: var(--base-4);
+}
+.information-item svg {
+  height: var(--icon-size);
+  width: var(--icon-size);
 }
 
-.navbar .menu {
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar__logo {
+  text-transform: uppercase;
+  font-size: var(--font-size-large);
+  font-weight: 500;
+}
+.nav-bar__logo--strong {
+  color: var(--primary-color);
+}
+.nav-bar__navigation .menu {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: var(--base-16);
   list-style-type: none;
 }
-.navbar .menu__item {
+.nav-bar__navigation .menu__item {
   text-transform: uppercase;
+}
+.nav-bar__navigation .menu__item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 :root {
@@ -61,6 +85,9 @@
   --base-32: 2rem;
   --base-64: 4rem;
   --base-100: 6.25rem;
+  --font-size-small: 1rem;
+  --font-size-regular: 1.5rem;
+  --font-size-large:2.5rem;
 }
 
 body {
@@ -70,6 +97,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p, span {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
   padding: 0;
   margin: 0;
 }/*# sourceMappingURL=style.css.map */

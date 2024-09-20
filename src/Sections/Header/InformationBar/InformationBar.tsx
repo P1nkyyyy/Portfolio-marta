@@ -20,8 +20,8 @@ export const InformationBar: FunctionComponent<InformationBarProps> = ({
                 <InformationItem text="+420 773 005 498" icon={<TelephoneIcon />} />
             </address>
             <div className={className("socials")}>
-                <InstagramIcon />
-                <FacebookIcon />
+                <InformationItem icon={<InstagramIcon />} url="www.facebook.com" />
+                <InformationItem icon={<FacebookIcon />} url="www.instagram.com" />
             </div>
         </div>
 
