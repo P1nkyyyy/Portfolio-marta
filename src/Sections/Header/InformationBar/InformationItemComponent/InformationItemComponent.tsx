@@ -3,7 +3,7 @@ import { bemClassNames } from "../../../../BemClassNames";
 
 const className = bemClassNames("information-item");
 
-type InformationItemProps = {
+type InformationItemComponentProps = {
     /** Icon that will be used inside the information item */
     icon: ReactElement;
     /** Text for the item */
@@ -12,7 +12,7 @@ type InformationItemProps = {
     url?: string;
 }
 
-export const InformationItem: FunctionComponent<InformationItemProps> = ({
+export const InformationItemComponent: FunctionComponent<InformationItemComponentProps> = ({
     icon,
     text,
     url,

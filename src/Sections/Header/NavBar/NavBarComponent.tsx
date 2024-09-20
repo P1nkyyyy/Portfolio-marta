@@ -1,14 +1,9 @@
-import { FunctionComponent } from "react"
 import { bemClassNames } from "../../../BemClassNames"
 
 const classNameNav = bemClassNames("nav-bar")
 const classNameMenu = bemClassNames("menu")
 
-type NavBarProps = {
-
-}
-
-export const NavBar: FunctionComponent<NavBarProps> = ({ }) => {
+export const NavBarComponent = () => {
     return (
         <div className={classNameNav()}>
             <h1 className={classNameNav("logo")}>Salon <span className={classNameNav("logo", { strong: true })}>Pinki</span></h1>
